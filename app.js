@@ -81,12 +81,17 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  let mySum = sum(sum(sumArr[0], sumArr[1])[0], sumArr[2])[0];
+  // let myProduct = multiply(multiply(sumArr[0],sumArr[1])[0],sumArr[2])[0];
+  // console.log(mySum);
+  // console.log(myProduct);
+  let message = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${mySum} is their sum.`
+  return [mySum, message];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
