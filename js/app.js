@@ -9,7 +9,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+  let sum = a + b;
+  let message = `The sum of ${a} and ${b} is ${sum}.`;
+  console.log(sum, message);
+  return [sum, message];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -70,7 +73,8 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  let a = sumArray[0];
+  let b = sumArray[1];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -91,6 +95,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let a = multArr[0];
 
 }
 
@@ -116,7 +121,7 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
