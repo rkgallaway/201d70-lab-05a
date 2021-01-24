@@ -60,8 +60,8 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let secondSum = sum(firstSum, c)[0];
   let messageOne = `${a} and ${b} and ${c} sum to ${secondSum}.`;
 
-  let firstProd = multiply(a,b)[0];
-  let secondProd = multiply(firstProd,c)[0];
+  let firstProd = multiply(a, b)[0];
+  let secondProd = multiply(firstProd, c)[0];
   let messageTwo = `The product of ${a} and ${b} and ${c} is ${secondProd}.`;
   // console.log([secondSum, messageOne]);
   return [secondSum, secondProd, messageOne, messageTwo];
@@ -86,12 +86,16 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  let firstArraySum = sum(testArray[0], testArray[1])[0];
+  let secondArraySum = sum(firstArraySum, testArray[2])[0];
+  let messageArrayOne = `2,3,4 was passed in as an array of numbers, and ${secondArraySum} is their sum.`;
+  console.log(secondArraySum);
+  return [secondArraySum, messageArrayOne];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);//eslint-disable-line
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -106,11 +110,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+// function multiplyArray(multArr) { //eslint-disable-line
+//   // let firstArraySum = sum(testArray[0], testArray[1])[0];
+//   // let secondArraySum = sum(firstArraySum, testArray[2])[0];
+//   let firstArrayProd = multiply(testArray[0], testArray[1])[0];
+//   let secondArrayProd = multiply(firstArrayProd, testArray[2])[0];
+//   let messageProdArray = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${secondArrayProd}.`;
+//   return [secondArrayProd, messageProdArray];
+// }
 
-}
-
-// Here is the test for multiplyArray(); uncomment it to run it
+// // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
