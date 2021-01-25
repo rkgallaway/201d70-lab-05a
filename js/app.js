@@ -8,10 +8,12 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+
+
 function sum(a, b) { //eslint-disable-line
-  let sum = (a + b);
+  let sum = a + b;
   let message = `The sum of ${a} and ${b} is ${sum}.`;
-  console.log([sum, message]);
+  //console.log([sum, message]);
   return [sum, message];
 }
 
@@ -32,7 +34,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) { //eslint-disable-line
   let product = a * b;
   let message = `The product of ${a} and ${b} is ${product}.`;
-  console.log([product, message]);
+  //console.log([product, message]);
   return [product, message];
 }
 
@@ -54,17 +56,23 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+//const firstArray = [4, 7, 5];
+
+
+
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let firstElement = (a, b, c);
-  let secondElement = multiply(4, 7, 5);
-  let thirdElement = `${a} and ${b} and ${c} sum to ${firstElement}.`;
-  let fourthElement = `The product of ${a} and ${b} and ${c} is ${secondElement}.`;
-  console.log([firstElement, secondElement, thirdElement, fourthElement]);
-  return [firstElement, secondElement, thirdElement, fourthElement];
+  let sumAb = sum (a, b)[0];
+  let firstSum = sum(sumAb, c)[0];
+  let productAb = multiply(a, b)[0];
+  let secondSum = multiply(productAb, c)[0];
+  let thirdElement = `${a} and ${b} and ${c} sum to ${firstSum}.`;
+  let fourthElement = `The product of ${a} and ${b} and ${c} is ${secondSum}.`;
+  //console.log([firstElement, secondElement, thirdElement, fourthElement]);
+  return [firstSum, secondSum, thirdElement, fourthElement];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
