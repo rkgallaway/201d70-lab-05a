@@ -16,7 +16,7 @@ function sum(a, b) { //eslint-disable-line
   //console.log([sum, message]);
   return [sum, message];
 }
-
+//add brach for question two
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7); //eslint-disable-line
 
