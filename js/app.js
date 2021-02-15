@@ -30,12 +30,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 // function multiply(a, b) { //eslint-disable-line
-  // let product = a * b;
-  // let message = `The product of ${a} and ${b} is ${product}.`;
-  // console.log([product, message]);
-  // return [product, message];
+// let product = a * b;
+// let message = `The product of ${a} and ${b} is ${product}.`;
+// console.log([product, message]);
+// return [product, message];
 // }
-// 
+
 
 // Here is the test for multiply(); uncomment it to run it
 //testMultiply(5, 9); //eslint-disable-line
@@ -55,12 +55,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 //function sumAndMultiply(a, b, c) { //eslint-disable-line
-  //let firstElement = (a, b, c);
-  //let secondElement = multiply(4, 7, 5);
-  //let thirdElement = `${a} and ${b} and ${c} sum to ${firstElement}.`;
-  //let fourthElement = `The product of ${a} and ${b} and ${c} is ${secondElement}.`;
-  //console.log([firstElement, secondElement, thirdElement, fourthElement]);
-  //return [firstElement, secondElement, thirdElement, fourthElement];
+//let firstElement = (a, b, c);
+//let secondElement = multiply(4, 7, 5);
+//let thirdElement = `${a} and ${b} and ${c} sum to ${firstElement}.`;
+//let fourthElement = `The product of ${a} and ${b} and ${c} is ${secondElement}.`;
+//console.log([firstElement, secondElement, thirdElement, fourthElement]);
+//return [firstElement, secondElement, thirdElement, fourthElement];
 //}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -82,15 +82,15 @@ Test this function by hand in the console to get it working, and when you think 
 // let testArray = [2, 3, 4]; //eslint-disable-line
 // 
 // function sumArray(sumArr) { //eslint-disable-line
-  // let firstElement = sum(sumArr);
-  // let nextElement = sum(frameElement, sumArr[2]);
-  // // let secondElement = `${testArray} was passed in as an array of numbers, and ${nextElement} is their sum.`;
-  // console.log(firstElement, secondElement);
-  // return [firstElement, secondElement];
-// 
-// 
+// let firstElement = sum(sumArr);
+// let nextElement = sum(frameElement, sumArr[2]);
+// // let secondElement = `${testArray} was passed in as an array of numbers, and ${nextElement} is their sum.`;
+// console.log(firstElement, secondElement);
+// return [firstElement, secondElement];
+//
+//
 // }
-// 
+//
 
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -111,7 +111,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 // function multiplyArray(multArr) { //eslint-disable-line
-// 
+//
 // }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -137,9 +137,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 // let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-// 
+//
 // function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-// 
+//
 // }
 
 // Here is the test for multiplyArray(); uncomment it to run it
